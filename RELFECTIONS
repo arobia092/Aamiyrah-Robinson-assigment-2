@@ -1,0 +1,9 @@
+(PART B SHORT REFLECTION)
+What is big-o notation? explain it simply?
+Big O notation calculates how the performance of an algorithm changes as the size of the input data increases. It helps programmers understand the efficiency of their code and predict how it will scale with larger datasets. For example, if an algorithm has a time complexity of O(n), it means that the time it takes to run will increase linearly with the size of the input.
+
+why is big O important for programmers? Give one real life example 
+big o is important for programmers because it helps them choose the most efficient algorithms for their applications, especially when dealing with large datasets. For example, if a programmer is developing a search feature for an e-commerce website, they would want to use an algorithm with a lower time complexity (like O(log n) for binary search) instead of a higher one (like O(n) for linear search) to ensure that users can quickly find products even as the number of items in the database grows.
+
+from part A why is vectors a better choice than array for this problem? 
+vectors are a dynamic array. They can get bigger or smaller 
