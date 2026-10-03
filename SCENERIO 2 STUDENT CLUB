@@ -1,0 +1,46 @@
+#include <iostream>
+#include <vector>
+#include <string>
+
+using namespace std;
+// creating the function to get the average
+double getAverage(const vector<int>& studentid) {
+    int sum = 0;
+
+    for (int id : studentid) {
+        sum += id;
+    }
+    // converting the variable type in double get average to the int sum
+    return static_cast<double>(sum) / studentid.size();
+}
+
+// creating the funtion of getting the highest student id 
+
+int getHighest(const vector<int>& studentid)
+{
+    int highest = studentid[0];
+
+    for (int id : studentid) {
+        if (id > highest) {
+            highest = id;
+        }
+    }
+    return highest;
+}
+
+
+int main(){
+    //creating the vector for the student id 
+    vector<int> studentid = { 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010 };
+    
+    // calling the functions 
+    double average = getAverage(studentid);
+    int highest = getHighest(studentid);
+    
+    // printing the results
+    cout << "Average student ID: " << average << endl;
+    cout << "Highest student ID: " << highest << endl;
+
+    return 0;
+    
+}
