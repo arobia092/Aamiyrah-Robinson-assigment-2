@@ -10,14 +10,14 @@ using namespace std;
 int main(){
     vector<string> menu;
     // adding 5 dishes using push_back
-    menu.push_back("steak");
-    menu.push_back("rice");
-    menu.push_back("mashpotatoe");
-    menu.push_back("cabbage");
-    menu.push_back("water");
+    menu.push_back("steak,");
+    menu.push_back("rice,");
+    menu.push_back("mashpotatoe,");
+    menu.push_back("cabbage,");
+    menu.push_back("and water");
 
     //inserting a new dish at the 2nd position 
-    menu.insert(menu.begin() + 1,"chicken");
+    menu.insert(menu.begin() + 1,"chicken,");
     
     //removing the 4th dish option .erase
     menu.erase(menu.begin() + 4);
@@ -28,6 +28,9 @@ int main(){
 }
     
 
+    
+    return 0;
+}
     
     return 0;
 }
